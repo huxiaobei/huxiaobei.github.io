@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - 胡小北</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+body{ background:#ffffff; }
+#header{ text-align:center; display:none; display:block; background:#3598db url('images/logo.png')  no-repeat 50% 85px fixed; }
+.header-background{background: url('images/banner1.png')  no-repeat 50% 0 fixed; z-index:2;}
+#header{ text-align:center; padding:85px 0 150px; z-index:1 }
+#navigation{ background:#fff; }
+#slogan{ z-index:2}
+</style>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="header-wrap">
+  <div id="header">
+    <div id="slogan"><img src="images/logo1.png"> </div>
+    <div class="header-background"></div>
+  </div>
+</div>
+<div class="navigation-wrap">
+  <div id="navigation">
+    <ul>
+      	<li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li><a href="contact.html" target="_self">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main-wrap">
+    <div id="main">
+        <!-- 主体内容 -->
+        <div class="wrap">
+            <div id="content" style="max-width: 940px; margin: 0px auto;">
+                <div class="content">
+                    <div class="content-title">2013年和2014年为京东做的创意广告</div>
+                    <div id="container">
+                        <a href="images/01.gif" target="_blank"><img src="images/01.gif"></a>
+                      <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1000" height="120">
+                          <param name="movie" value="images/01.swf">
+                          <param name="quality" value="high">
+                          <param name="wmode" value="opaque">
+                          <param name="swfversion" value="15.0.0.0">
+                          <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+                          <param name="expressinstall" value="Scripts/expressInstall.swf">
+                          <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+                          <!--[if !IE]>-->
+                          <object type="application/x-shockwave-flash" data="images/01.swf" width="1000" height="120">
+                            <!--<![endif]-->
+                            <param name="quality" value="high">
+                            <param name="wmode" value="opaque">
+                            <param name="swfversion" value="15.0.0.0">
+                            <param name="expressinstall" value="Scripts/expressInstall.swf">
+                            <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+                            <div>
+                              <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+                            </div>
+                            <!--[if !IE]>-->
+                          </object>
+                          <!--<![endif]-->
+                      </object>
+<div id="container-description">
+              <p>第一个是GIF图，2013年，当时需要为京东做一个创意广告在易购网上投放，由于各种原因只能不能使用flash，只能用GIF来完成。每个人物，场景都是画出来的，花了2天时间。据反馈，京东对此次创意很满意。次年，又被要求做了一版有关于京东上市的创意，采用了flash。</p>
+                      </div>
+                  </div>
+                    
+                 </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 主体内容End -->
+    </div>
+</div>
+<a href="12.html" id="post-prev"></a>
+<a href="2.html" id="post-next"></a>
+<i id="back-top"></i>
+<script src="js/script"></script> 
+<script src="js/script.js"></script> 
+<script>
+function MO_backgroundrepeat_CALL(v){
+			if(v==''){
+				document.body.style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.body.style.backgroundRepeat = v;
+			}
+		}
+		function MO_headerrepeat_CALL(v){
+			if(v==''){
+				document.querySelector('.header-background').style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.querySelector('.header-background').style.backgroundRepeat = v;
+			}
+		}
+		function MO_headershow_CALL(v){
+			if(v==''){
+				$('#header').hide();
+			}else{
+				$('#header').show();
+			}
+		}
+		function MO_headerbannerPadding_CALL(v){
+			$('#header').css('padding',v);
+		}
+		function MO_listlistDescription_CALL(v){
+			if(v==''){
+				$(".item-description").hide();
+			}else{
+				$(".item-description").show();
+			}
+		}
+
+		if(location.href.indexOf('?editor=1')>-1){
+			$('a').click(function(e){
+				e.preventDefault();
+			});
+		}
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>

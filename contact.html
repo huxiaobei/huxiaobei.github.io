@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact - 胡小北</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+body{ background:#ffffff; }
+#header{ text-align:center; display:none; display:block; background:#3598db url('images/logo.png')  no-repeat 50% 85px fixed; }
+.header-background{background: url('images/banner1.png')  no-repeat 50% 0 fixed; z-index:2;}
+#header{ text-align:center; padding:85px 0 150px; z-index:1 }
+#navigation{ background:#fff; }
+#slogan{ z-index:2}
+</style>
+</head>
+
+<body>
+<div class="header-wrap">
+  <div id="header">
+    <div id="slogan"><img src="images/logo1.png"> </div>
+    <div class="header-background"></div>
+  </div>
+</div>
+<div class="navigation-wrap">
+  <div id="navigation">
+    <ul>
+      	<li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li class="current"><a href="contact.html" target="_self">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main-wrap">
+    <div id="main">
+        <!-- 主体内容 -->
+        <div class="wrap">
+            <div id="content" style="max-width: 940px; margin: 0px auto;">
+                <div class="content" style="margin-right:0;">
+                    <div id="container">
+                        <p style="text-align:center; "><span style="font-size:18px">联系方式</span></p>
+                        
+                        
+                        <p style="text-align: center; margin-top:40px;"><span style="font-size:14px"><span style="color:#bfbfbf">Tel:15652223314 &nbsp; &nbsp;weibo:</span><span style="color: rgb(165, 165, 165);"><a href="http://weibo.com/316615000" target="_blank" title="新浪微博" style="color:#3598db; font-size:12px;">@不能动小猴子</a>&nbsp; &nbsp;Email:hu.bei@foxmail.com &nbsp;QQ:<a href="http://wpa.qq.com/msgrd?v=3&uin=188654466&site=qq&menu=yes" target="_blank" title="在线咨询" style="color:#3598db;">188654466</a></span></span></p>
+                        <p align="center" style="margin-top:80px;">
+                        <span><a href="http://weibo.com/316615000" target="_blank" title="新浪微博"><img src="images/con1.png" style=" display:inline"></a></span>
+                        <span style="padding-left:16px;"><a href="http://huaban.com/uxcnrjwe8a/" title="花瓣网" target="_blank"><img src="images/con3.png" style=" display:inline"></a></span></p>
+                        <p style="text-align: center; margin-top:30px;"><img src="images/weixin.png" width="170" height="206"></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 主体内容End -->
+    </div>
+</div>
+    
+<i id="back-top"></i>
+<script src="js/script"></script> 
+<script src="js/script.js"></script> 
+<script>
+		function MO_backgroundrepeat_CALL(v){
+			if(v==''){
+				document.body.style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.body.style.backgroundRepeat = v;
+			}
+		}
+		function MO_headerrepeat_CALL(v){
+			if(v==''){
+				document.querySelector('.header-background').style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.querySelector('.header-background').style.backgroundRepeat = v;
+			}
+		}
+		function MO_headershow_CALL(v){
+			if(v==''){
+				$('#header').hide();
+			}else{
+				$('#header').show();
+			}
+		}
+		function MO_headerbannerPadding_CALL(v){
+			$('#header').css('padding',v);
+		}
+		function MO_listlistDescription_CALL(v){
+			if(v==''){
+				$(".item-description").hide();
+			}else{
+				$(".item-description").show();
+			}
+		}
+
+		if(location.href.indexOf('?editor=1')>-1){
+			$('a').click(function(e){
+				e.preventDefault();
+			});
+		}
+	</script>
+</body>
+</html>

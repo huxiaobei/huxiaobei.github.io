@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - 胡小北</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+body{ background:#ffffff; }
+#header{ text-align:center; display:none; display:block; background:#3598db url('images/logo.png')  no-repeat 50% 85px fixed; }
+.header-background{background: url('images/banner1.png')  no-repeat 50% 0 fixed; z-index:2;}
+#header{ text-align:center; padding:85px 0 150px; z-index:1 }
+#navigation{ background:#fff; }
+#slogan{ z-index:2}
+</style>
+</head>
+
+<body>
+<div class="header-wrap">
+  <div id="header">
+    <div id="slogan"><img src="images/logo1.png"> </div>
+    <div class="header-background"></div>
+  </div>
+</div>
+<div class="navigation-wrap">
+  <div id="navigation">
+    <ul>
+      	<li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li><a href="contact.html" target="_self">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main-wrap">
+    <div id="main">
+        <!-- 主体内容 -->
+        <div class="wrap">
+            <div id="content" style="max-width: 940px; margin: 0px auto;">
+                <div class="content">
+                    <div class="content-title">摇钱树</div>
+                    <div id="container">
+                        <a href="images/06.jpg" target="_blank"><img src="images/06.jpg"></a>
+                        <div id="container-description">
+                        <p>刚进易购做的第一个活动，摇钱树，当时的想法用JS控制树的抖动，可惜没有JS工程师，只能用GIF实现。</p>
+                        </div>
+                    </div>
+                    
+                 </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 主体内容End -->
+    </div>
+</div>
+  
+<a href="5.html" id="post-prev"></a>
+<a href="7.html" id="post-next"></a>  
+<i id="back-top"></i>
+<script src="js/script"></script> 
+<script src="js/script.js"></script> 
+<script>
+		function MO_backgroundrepeat_CALL(v){
+			if(v==''){
+				document.body.style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.body.style.backgroundRepeat = v;
+			}
+		}
+		function MO_headerrepeat_CALL(v){
+			if(v==''){
+				document.querySelector('.header-background').style.backgroundRepeat = 'no-repeat';
+			}else{
+				document.querySelector('.header-background').style.backgroundRepeat = v;
+			}
+		}
+		function MO_headershow_CALL(v){
+			if(v==''){
+				$('#header').hide();
+			}else{
+				$('#header').show();
+			}
+		}
+		function MO_headerbannerPadding_CALL(v){
+			$('#header').css('padding',v);
+		}
+		function MO_listlistDescription_CALL(v){
+			if(v==''){
+				$(".item-description").hide();
+			}else{
+				$(".item-description").show();
+			}
+		}
+
+		if(location.href.indexOf('?editor=1')>-1){
+			$('a').click(function(e){
+				e.preventDefault();
+			});
+		}
+	</script>
+</body>
+</html>
